@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('print hostname'){
         step{
-            echo "hostname"
+            sh 'hostname'
         }
         }
         stage('IP address'){
