@@ -12,8 +12,8 @@ pipeline{
             }
         }
         stage('CUP details'){
-            steps { 
-                sh 'lsCPU'
+            steps{ 
+                sh 'lscpu'
             }
         }
         stage('Disk usage'){
