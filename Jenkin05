@@ -2,7 +2,7 @@ pipeline{
     agent any
     stages{
         stage('print hostname'){
-        step{
+        steps{
             sh 'hostname'
         }
         }
