@@ -1,6 +1,6 @@
 pipeline{
-    agent{ 
-        label: 'slave' 
+    agent { 
+        labels 'slave' 
         }
     stages{
         stage('print hostname'){
