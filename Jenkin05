@@ -27,6 +27,11 @@ pipeline{
             steps{
                 sh 'free -h'
             }
-        }
+        } 
+stage('date'){
+            steps{
+                sh 'date'
+            }
     }
+}
 }
