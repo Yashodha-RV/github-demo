@@ -1,6 +1,6 @@
 pipeline{
-  agent { 
-        label 'slave' 
+    agent { 
+        label: 'slave' 
         }
     stages{
         stage('print hostname'){
@@ -15,7 +15,7 @@ pipeline{
         }
         stage('CUP details'){
             steps{ 
-                sh 'lscpu'
+                sh 'lsCPU'
             }
         }
         stage('Disk usage'){
@@ -27,10 +27,13 @@ pipeline{
             steps{
                 sh 'free -h'
             }
-        } stage('date'){
+
+        }
+        stage('date'){
             steps{
                 sh 'date'
             }
+            
+        }
     }
-}
 }
