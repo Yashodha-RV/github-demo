@@ -1,3 +1,4 @@
-#!/bin/bash
-echo "hi"
+lo#!/bin/bash
+echo "hello"
+
 
